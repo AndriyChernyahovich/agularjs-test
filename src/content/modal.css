@@ -1,0 +1,85 @@
+.modal-container:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+}
+
+.modal {
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    z-index: 1001;
+    width: 400px;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-title {
+    color: #727481;
+}
+.close {
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    font-weight: 400;
+    color: #A4A4B5;
+    cursor: pointer;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.modal-label {
+    color: #9FA0A9;
+}
+input,select:focus {
+    outline: none;
+}
+.form-control {
+    padding: 10px;
+    border: none;
+    background-color: #F3F6F9;
+    border-radius: 6px;
+    color: #ADB0B9;
+}
+.modal-footer {
+    display: flex;
+    gap: 53%;
+    justify-content: center;
+    margin-top: 15px;
+}
+.modal-footer-create {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.save-btn {
+    color: #FFFFFF;
+    padding: 10px 30px;
+    background-color: #2E8FF0;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.delete-btn {
+    color: #FFFFFF;
+    padding: 10px 30px;
+    background-color: #F44682;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.form input.ng-invalid.ng-touched {
+    border: 1px solid #EF7EA1;
+}
