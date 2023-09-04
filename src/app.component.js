@@ -26,6 +26,7 @@
     }
     $ctrl.createUser = function (){
       console.log('createUser')
+      console.log(123213)
     }
     $ctrl.title = 'Profile Test';
 
